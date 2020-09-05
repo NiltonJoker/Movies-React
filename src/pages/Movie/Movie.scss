@@ -1,0 +1,147 @@
+.movie{
+  height: calc(100vh - 64px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment:fixed;
+  @media (max-width: 768px) {
+    position: relative;
+  }
+
+  &__dark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .5;
+  }
+
+  > .ant-row{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    // justify-content: space-evenly;
+    .ant-col{
+      margin-right: 10px; 
+    }
+  }
+
+  &__poster{
+    height: 70%;
+    @media (max-width:768px) {
+      // display:none;
+      width: 100px;
+      height: 30%;
+      position: absolute!important;
+      bottom: 20px;
+      right: calc(50vw - 150px);
+    }
+    div{
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+  }
+
+  &__info{
+    height: 70%;
+    color: #fff;
+    &-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1{
+        color: #fff;
+        margin: 0;
+        font-size: 50px;
+
+        span{
+          font-size: 20px;
+          margin-left:  10px;
+          opacity: .5;
+        }
+      }
+
+      button{
+        height: 100%;
+        background-color:transparent;
+        color: #fff;
+        border: 0;
+        font-size: 25px;
+
+        &:hover,
+        &:focus,
+        &:active{
+          background-color: transparent;
+          color: turquoise;
+        }
+      }
+      @media (max-width: 768px) {
+        h1{
+          font-size: 30px;
+          span{
+            font-size: 16px;
+          }
+        }
+        button{
+          font-size: 18px;
+        }
+      }
+    }
+
+    &-content{
+      margin-top: 20px;
+      @media(max-width: 992px){
+        overflow-y: scroll;
+        height: 400px;
+      }
+      @media (max-width: 768px) {
+        overflow-y: scroll;
+        height: 60%;
+      }
+      h3{
+        color: #fff;
+        font-weight: bold;
+        font-size: 24px;
+        // margin-bottom: 0px;
+      }
+      &-stars{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        div{
+          margin-right: 4px;
+        }
+      }
+      p{
+        font-size: 16px;
+      }
+      ul{
+        font-size: 16px;
+      }
+
+      @media (max-width: 768px) {
+        margin-top: 15px;
+        h3{
+          font-size: 20px;
+        }
+        p{
+          margin-bottom: 10px!important;
+          font-size: 14px;
+        }
+        ul{
+          font-size: 14px;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 0px 10px;
+    }
+  }
+}

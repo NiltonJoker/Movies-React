@@ -1,0 +1,19 @@
+.menu-top{
+  display: flex;
+  &__menu{
+    flex-grow: 1;
+  }
+  .ant-menu{
+    height: 64px;
+  }
+  &__logo{
+    display: flex;
+    margin-right: 40px;
+    a{
+      margin-top: 10px;
+      svg{
+        width: 40px;
+      }
+    }
+  }
+}
