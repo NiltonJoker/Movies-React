@@ -1,6 +1,10 @@
 .search{
   z-index: 1;
   margin: 50px 0;
+  display: flex!important ;
+  justify-content: center!important;
+  align-items: center!important;
+  flex-direction: column!important;
 
   h1{
     text-align: center;
@@ -12,7 +16,7 @@
     font-size: 35px;
     height: 60px;
     border-radius: 30px;
-
+    max-width: 800px;
   }
 
   &__alternative{

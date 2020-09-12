@@ -42,7 +42,7 @@ function Search(props) {
 
   return (
     <Row>
-      <Col span={12} offset={6} className="search">
+      <Col span={24}  className="search">
         <h1>Busca tu película</h1>
         <Input onChange={onChangeSearch} defaultValue={searchValue} placeholder={searchValue}/>
       </Col>
